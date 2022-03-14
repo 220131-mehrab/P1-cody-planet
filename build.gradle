@@ -1,5 +1,6 @@
 plugins {
     id 'application'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 mainClassName = 'com.revature.Planets.App'
 
@@ -12,6 +13,8 @@ repositories {
 
 dependencies {
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:10.1.0-M11'
+    implementation 'com.h2database:h2:2.1.210'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
